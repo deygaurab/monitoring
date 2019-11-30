@@ -55,7 +55,7 @@ def lambda_handler(event, context):
     platform = "aws"
 
     # printing metrics to be sent to Wavefront
-    metric = "%s %s %s source='%s' app='%s' location='%s' environment='%s' platform='%s' bu='pire' " % (
+    metric = "%s %s %s source='%s' app='%s' location='%s' environment='%s' platform='%s' bu='' " % (
     _prefix, util, _epoch_time, source, app, location, env, platform)
     print(metric)
 
